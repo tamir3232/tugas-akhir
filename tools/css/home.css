@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header p {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(3, 1, 1);
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #2a2f3b;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 50px;
+    flex-wrap: wrap;
+}
+
+main .content .content-description {
+    flex: 1 1;
+    padding-right: 20px;
+}
+
+main .content .content-description .title {
+    font-size: 1.5rem;
+    margin-block: 1rem;
+    text-align: justify;
+}
+
+main .content .content-description p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+  }
+   
+  main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+  }
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.my-app .run-button {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(3, 1, 1);
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    background-color: white;
+    border: 1px solid #2a2f3b;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.my-app .run-button:hover {
+    background-color: #2a2f3b;
+    color: white;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.maps {
+    margin: 20px 0;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 40px;
+}
+
+thead th {
+    color: #fff;
+    background-color: #2a2f3b;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#priorityForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(48, 26, 100, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+#priorityForm label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2a2f3b;
+}
+
+#priority {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #2a2f3b;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2a2f3b;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#priority:hover {
+    border-color: #1d2531;
+}
+
+#priority:focus {
+    outline: none;
+    border-color: #1d2531;
+    box-shadow: 0px 0px 8px rgba(42, 47, 59, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .content .content-description .title {
+        font-size: 1.5rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    #map {
+        height: 300px;
+    }
+}

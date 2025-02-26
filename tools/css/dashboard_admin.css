@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    table-layout: auto; /* Supaya tabel menyesuaikan isi */
+}
+
+thead th {
+    color: #fff;
+    background-color: #2a2f3b;
+    text-align: center; /* Pastikan header sejajar di tengah */
+    padding: 12px;
+    vertical-align: middle; /* Agar teks sejajar di tengah secara vertikal */
+    white-space: nowrap; /* Mencegah teks header turun ke bawah */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center; /* Semua isi tabel sejajar tengah */
+    vertical-align: middle; /* Pastikan teks sejajar di tengah */
+}
+
+/* Penyesuaian lebar kolom */
+th:nth-child(2), td:nth-child(2) { /* Nama Sekolah */
+    min-width: 250px;
+}
+
+th:nth-child(7), td:nth-child(7) { /* Alamat */
+    min-width: 300px;
+    text-align: left; /* Alamat lebih mudah dibaca jika rata kiri */
+}
+
+/* Styling tambahan */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Sticky Header saat Scroll */
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    thead th {
+        font-size: 14px;
+    }
+}

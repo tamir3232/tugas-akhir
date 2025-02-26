@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.input {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.input h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box-input i {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+    color: #777;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-input {
+    width: 90%;
+    background-color: #0e2238;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-input:hover {
+    background-color: #0e2238;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bottom p {
+    margin: 0;
+}
+
+.bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+.role {
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.role option {
+    padding: 10px;
+}
+
+.input .error-msg {
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size:20px; 
+    padding:10px;
+}
