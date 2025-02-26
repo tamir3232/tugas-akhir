@@ -95,7 +95,7 @@
         const longitude = position.coords.longitude;
         const selectedPriority = document.getElementById("priority").value;
 
-        fetch("http://localhost:5000/calculate", {
+        fetch("http://82.29.165.76:5000/calculate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ latitude, longitude, priority: selectedPriority }),
