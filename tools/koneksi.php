@@ -2,7 +2,7 @@
 $servername = "localhost";
 $database = "skripsi";
 $username = "root";
-$password = "12345678";
+$password = "newpassword";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Cek

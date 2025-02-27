@@ -7,8 +7,8 @@ app = Flask(__name__)
 CORS(app)
 
 db = pymysql.connect(
-    host="localhost",
-    user="root",
+    host="82.29.165.76",
+    user="flask_user",
     password="12345678",
     database="skripsi"
 )
@@ -166,4 +166,5 @@ def calculate():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
+    

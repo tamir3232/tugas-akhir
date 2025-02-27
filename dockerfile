@@ -1,4 +1,4 @@
-# Gunakan base image untuk Python 3.12
+# Gunakan base image untuk Python 2.12
 FROM python:3.12-slim
 
 # Set environment variable untuk memastikan Python tidak menulis bytecode .pyc
