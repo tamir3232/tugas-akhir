@@ -10,7 +10,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     display: inline-block;
-    margin-right: 20px; 
+    margin-right: 50px; 
     vertical-align: top;
   }
   
@@ -26,11 +26,18 @@
     border-bottom: 3px solid #000000;
   }
   
-  .content {
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 600;
-  }
+.content {
+  margin-left: 5px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Posisikan teks ke kiri */
+  height: calc(100% - 40px); /* Sesuaikan agar konten tidak terlalu padat */
+}
+
+  
   
   .button {
     padding: 5px 10px;

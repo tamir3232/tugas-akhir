@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: ../login/login.php");
+    exit;
+}
+?>
+
 <?php include '../display/header.php'?>
 <link rel="stylesheet" href="../tools/css/dashboard_admin.css">
 

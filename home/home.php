@@ -126,7 +126,7 @@
                   <p>Jarak: ${school.distance_km !== "N/A" ? school.distance_km.toFixed(2) : "Tidak Tersedia"} km</p>
                   <p>Peringkat SMARTER: ${school.smarter_score.toFixed(2)}</p>
                   <button onclick="createRoute(${school.latitude}, ${school.longitude})">Tampilkan Rute</button>
-               `);
+                `);
 
               markers.push(marker);
             } else {
@@ -172,7 +172,7 @@
         let errorMessage = "";
         switch (error.code) {
           case error.PERMISSION_DENIED:
-            errorMessage = "Pengguna menolak permintaan geolokasi";
+            errorMessage = "Pengguna menolak permintaan geolokasi.";
             break;
           case error.POSITION_UNAVAILABLE:
             errorMessage = "Lokasi tidak tersedia.";

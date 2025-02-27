@@ -23,80 +23,42 @@ body {
 
 .box-input {
     position: relative;
-    margin-bottom: 20px;
+    width: 100%; /* Pastikan sesuai dengan parent container */
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    background: #fff;
 }
 
 .box-input i {
-    position:absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 35px;
     color: #777;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: calc(100% - 40px);
-    padding: 10px;
-    padding-left: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.box-input input {
+    flex: 1; /* Agar input mengambil ruang tersisa */
+    border: none;
     outline: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Mencegah input melebihi container */
 }
 
 .btn-input {
-    width: 90%;
+    width: 100%;
     background-color: #0e2238;
     color: #fff;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 16px;
 }
 
 .btn-input:hover {
-    background-color: #0e2238;
-}
-
-.bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.bottom p {
-    margin: 0;
-}
-
-.bottom a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.bottom a:hover {
-    text-decoration: underline;
-}
-
-.role {
-    width: 90%;
-    padding: 10px;
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    outline: none;
-}
-
-.role option {
-    padding: 10px;
-}
-
-.input .error-msg {
-    margin:10px 0;
-    display: block;
-    background: crimson;
-    color: #fff;
-    border-radius: 5px;
-    font-size:20px; 
-    padding:10px;
+    background-color: #0b1b2c;
 }

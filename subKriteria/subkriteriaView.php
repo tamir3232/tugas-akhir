@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: ../login/login.php");
+    exit;
+}
+?>
 <html lang="en">
 <head>
     <?php include '../display/header.php'?>
